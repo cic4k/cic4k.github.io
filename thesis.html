@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thesis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">CEGG</a></h1>
+					<nav id="nav">
+						<ul>
+							<!--<li><a href="research.html">Research</a></li>-->
+							<!--<<li><a href="teaching.html">Teaching</a></li>-->
+							<!--<<li><a href="publications.html">Publications</a></li>-->
+							<li><a href="thesis.html">Thesis</a></li>
+							<li><a href="./assets/content/Curriculum_Vitae__CEGG_FR_0920.pdf">CV</a></li>
+							<!--<<li><a href="others.html">Others</a></li>-->
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Thesis : Automatic Multilingual Multimedia Summarization and Information Retrieval</h2>
+							<p>Résumé automatique multimédia et multilingue et Recherche d'information</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">								
+								<p>Defended publicly on December 18, 2019 before the jury members:</p>
+								<ul>
+									<li>Mme. Violaine PRINCE. Professor, LIRMM, Montpellier 2 (Rapporteur)</li>
+									<li>M. Eric GAUSSIER. Professor, LIG, Grenoble (Rapporteur)</li>
+									<li>Mme. Fatiha SADAT. Professor, GDAC, Montréal (Examiner)</li>
+									<li>M. Laurent BESACIER. Professor, LIG, Grenoble (Examiner)</li>
+									<li>M. Kamel SMAILI. Professor, LORIA, CNRS-Lorraine-Inria (Examiner)</li>
+									<li>M. Alfonso MEDINA URREA. Researcher, CELL, COLMEX (Examiner)</li>
+									<li>M. Juan-Manuel TORRES-MORENO. Associate Professor HDR, LIA, Avignon (Advisor)</li>
+									<li>M. Eric SANJUAN. Associate Professor HDR, LIA, Avignon (Co-Advisor)</li>
+								</ul>
+								<p>Download the <a href="./assets/content/Thesis_CEGG_UAPV_soutenance.pdf">manuscript</a> and <a href="https://tel.archives-ouvertes.fr/tel-02886624v1/bibtex">Bibtex</a></p>
+								<h3>Abstract:</h3>
+								<p style="text-align: justify;" >As multimedia sources have become massively available online, helping users to understand the large amount of information they generate has become a major issue. One way to approach this is by summarizing multimedia content, thus generating abridged and informative versions of the original sources. This PhD thesis addresses the subject of text and audio-based multimedia summarization in a multilingual context. It has been conducted within the framework of the Access Multilingual Information opinionS (AMIS) CHISTERA-ANR project, whose main objective is to make information easy to understand for everybody.</p>
+
+								<p style="text-align: justify;">Text-based multimedia summarization uses transcripts to produce summaries that may be presented either as text or in their original format. The transcription of multimedia sources can be done manually or automatically by an Automatic Speech Recognition (ASR) system. The transcripts produced using either method differ from wellformed written language given their source is mostly spoken language. In addition, ASR transcripts lack syntactic information. For example, capital letters and punctuation marks are unavailable, which means sentences are nonexistent. To deal with this problem, we propose a Sentence Boundary Detection (SBD) method for ASR transcripts which uses textual features to separate the Semantic Units (SUs) within an automatic transcript in a multilingual context. Our approach, based on subword-level information vectors and Convolutional Neural Networks (CNNs), overperforms baselines by correctly identifying SU borders for French, English and Modern Standard Arabic (MSA). We then study the impact of cross-domain datasets over MSA, showing that tuning a model that was originally trained with a big out-of-domain dataset with a small in-domain dataset normally improves SBD performance. Finally, we extend ARTEX, a state-of-the-art extractive text summarization method, to process documents in MSA by adapting preprocessing modules. The resulting summaries can be presented as plain text or in their original multimedia format by aligning the selected SUs.</p>
+
+								<p style="text-align: justify;">Concerning audio-based summarization, we introduce an extractive method which represents the informativeness of the source based on its audio features to select the segments that are most pertinent to the summary. During the training phase, our method uses available transcripts of the audio documents to create an informativeness model which maps a set of audio features with a divergence value. Subsequently, when summarizing new audio documents, transcripts are not needed anymore. Results over a multi-evaluator scheme show that our approach provides understandable and informative summaries.</p>
+
+								<p style="text-align: justify;">We also deal with the field of evaluation measures. We have developed Window-based Sentence Boundary Evaluation (WiSeBE), a semi-supervised metric based on multi-reference (dis)agreement, which examines whether evaluating an automatic SBD system based on a single reference is enough to assess how well the system is performing. We also explore the possibility of measuring the quality of an automatic transcript based on its informativeness. In addition, we study the extent to which automatic summarization may compensate for the problems raised during the transcription phase. Lastly, we study how text informativeness evaluation measures may be extended to passage interestingness evaluation. </p>
+
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; CEGG. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
