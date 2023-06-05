@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>\vwa.li vwa.lu\</title>
+  <script>
+    // Get the value of the 'redirect' variable from the URL query string
+    function getRedirectValue() {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      return urlParams.get('redirect');
+    }
+
+    // Redirect to different pages based on the 'redirect' value
+    function redirectToPage() {
+      const redirectValue = getRedirectValue();
+
+      // Check the value and redirect accordingly
+      switch (redirectValue) {
+        case 'ecir23':
+          window.location.href = 'https://docs.google.com/presentation/d/10Hn4KmOcDAtaJua0L_qSbR0pHSxBhv_HNx7FNcimSDs/edit?usp=sharing';
+          break;
+        case 'houpsh23':
+          window.location.href = 'https://docs.google.com/presentation/d/1Jbj0kZ-xY4ZnYTOdAbWEuv-OiGFfUn6w6G2DqFOpesU/edit?usp=sharing';
+          break;
+        default:
+          // Redirect to a default page if the 'redirect' value is not recognized
+          window.location.href = 'https://libraryofbabel.info/bookmark.cgi?pd_tvbuy_cbjjyvagyn.124';
+          break;
+      }
+    }
+
+    // Call the redirect function when the page loads
+    window.onload = redirectToPage;
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>
